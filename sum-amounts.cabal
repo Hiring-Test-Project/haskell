@@ -1,0 +1,19 @@
+cabal-version:      3.0
+name:               sum-amounts
+version:            0.1.0.0
+license:            MIT
+build-type:         Simple
+
+library
+  exposed-modules:  SumAmounts
+  hs-source-dirs:   src
+  build-depends:    base >=4.14 && <5
+  default-language: Haskell2010
+
+test-suite sum-amounts-test
+  type:             exitcode-stdio-1.0
+  main-is:          Main.hs
+  hs-source-dirs:   test
+  build-depends:    base >=4.14 && <5
+                  , sum-amounts
+  default-language: Haskell2010
